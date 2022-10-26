@@ -30,6 +30,10 @@ class CustomTableViewCell: UITableViewCell {
     
     func setupCustomCell(name: String?, image: UIImage?){
         flagLabel.text = name
-        flagImageView.image = image
+        if image != nil {
+            flagImageView.image = image
+        } else {
+            flagImageView.image = UIImage(named: "noImage")
+        }
     }
 }

@@ -34,7 +34,6 @@ class DetailViewController: UIViewController {
     }
     
     @objc func shareTapped(){
-        //It is needed to go to the file info.plist (right click -> add row) -> privacy - Photo Library Addition....
         guard let image = flagImageView.image?.jpegData(compressionQuality: 0.8) else {
             print("No image found")
             return
